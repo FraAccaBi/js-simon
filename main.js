@@ -34,7 +34,7 @@ const randomNumber = generateNumbers(5,100)
 console.log(randomNumber);
 
 randomElement.innerHTML = `memorizza questi numeri ${randomNumber}`
-/* //imposto il timer a 30secondi
+//imposto il timer a 30secondi
 setTimeout(() => {
     //l'untente deve inserire uno alla volta i numeri che ha visto precedentemente a schermo tramite prompt
     //faccio un ciclo e chiedo all'utente di inserire i numeri
@@ -49,10 +49,10 @@ setTimeout(() => {
     }
     console.log(user_try); */
     /* Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati. */
-   // alert(`hai indovinato ${user_try.length} / ${popArray.length}`)
-//},// 3000)
+   alert(`hai indovinato ${user_try.length} / ${popArray.length}`)
+}, 3000)
 
-//document.querySelector('.popup').style.display = "none"  
+document.querySelector('.popup').style.display = "none"  
 
 
 
