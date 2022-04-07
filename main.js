@@ -51,9 +51,12 @@ setTimeout(() => {
     console.log(user_try);
     /* Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati. */
    alert(`hai indovinato ${user_try.length} / ${randomNumber.length}`)
-}, 3000)
+}, 30000)
 
-//document.querySelector('.popup').style.display = "none"  
+setTimeout(() => {
+    document.querySelector('.popup').style.display = "none"
+}, 29500)
+//  
 
 
 
