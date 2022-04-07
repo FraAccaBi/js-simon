@@ -30,6 +30,7 @@ function generateNumbers(total_numbers, numbers_limit) {
 } 
 //ora la funzione genererà 5 numeri random da 1 a 100
 const randomNumber = generateNumbers(5,100)
+randomElement.innerHTML = randomNumber
 
 console.log(randomNumber);
 
@@ -43,16 +44,16 @@ setTimeout(() => {
         let userNumber = Number(prompt('inserisci uno dei numeri che hai visto prima'))
         console.log(userNumber);
         //inserisci nell'array di tentaitvi solo se i numeri inseriti combaciano con l'array popup e se non sono già dentro l'array dei tentativi
-        if ((popArray.includes(userNumber)) && !user_try.includes(userNumber)){
+        if ((randomNumber.includes(userNumber)) && !user_try.includes(userNumber)){
             user_try.push(userNumber)
         }
     }
-    console.log(user_try); */
+    console.log(user_try);
     /* Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati. */
-   alert(`hai indovinato ${user_try.length} / ${popArray.length}`)
+   alert(`hai indovinato ${user_try.length} / ${randomNumber.length}`)
 }, 3000)
 
-document.querySelector('.popup').style.display = "none"  
+//document.querySelector('.popup').style.display = "none"  
 
 
 
